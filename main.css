@@ -36,39 +36,68 @@ ul li page-collection a{
   color: black;
 }
 .logo img{
-float: left;
-width: 30%;
+/* float: left; */
+width: 40%;
 height: auto;
 }
 .main {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 500vh;
+  /* margin: auto; */
 }
 .content{
-  position: relative;
-  /* justify-content: center; */
-  top: 40%;
+  position: relative; 
+ justify-content: center;
+  top: 10%;
   left: 25%;
-  transform: translate(-50%,-50%)
+  transform: translate(10%,10%)
 }
-.content p  {
-  color: rgb(0, 0, 0);
-  font-size: 40px;
-  /* background-color: white; */
-  /* text-align: center; */
+.content p {
+  color: rgb(247, 134, 134);
+  font-size: 4vh;
+
 }
 .content h1{ 
   color: rgb(129, 66, 66);
-  font-size: 30px;
+  font-size: 5vh;
  }
 .content input {
   border: 2px solid rgb(128, 66, 66);
-  padding: 10px 70px;
+  padding: 10px 5vh;
   color:rgb(0, 0, 0);
-  /* text-decoration: none; */
-  /* justify-content: center; */
+  align-items: center; 
 }
 .content input:hover{
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
+@media only screen and (max-width:600px){
+
+  .topnav ul{
+    /* margin: 20px;
+    padding: 20px; */
+    list-style:none;
+    display: flex;
+    flex: center;
+    justify-content: space-between;
+    font-size: 40%;
+  }
+  a{
+    text-decoration: none;
+  }
+  content{
+    position: relative; 
+   justify-content: center;
+    top: 10%;
+    left: 25%;
+    transform: translate(10%,10%)
+  }
+  .content p {
+    color: rgb(255, 0, 0);
+    font-size: 4vh;
+  
+  }
+  .content h1{ 
+    color: rgb(180, 161, 161);
+    font-size: 4vh;
+   }
+  }
